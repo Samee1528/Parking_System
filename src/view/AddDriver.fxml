@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverController">
+   <children>
+      <AnchorPane prefHeight="408.0" prefWidth="600.0" style="-fx-background-color: #d1d8e0;">
+         <children>
+            <Label layoutX="14.0" layoutY="26.0" prefHeight="34.0" prefWidth="142.0" text="Add Driver" textFill="#c61b1b">
+               <font>
+                  <Font name="Cambria Bold" size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutX="144.0" layoutY="42.0" prefHeight="0.0" prefWidth="328.0" style="-fx-background-color: black;" />
+            <JFXTextField fx:id="txtDriverName" labelFloat="true" layoutX="44.0" layoutY="101.0" prefHeight="25.0" prefWidth="225.0" promptText="Driver Name" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtNic" labelFloat="true" layoutX="44.0" layoutY="160.0" prefHeight="25.0" prefWidth="151.0" promptText="NIC" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtDriverLicenseNo" labelFloat="true" layoutX="41.0" layoutY="216.0" prefHeight="25.0" prefWidth="158.0" promptText="Driving License No" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="41.0" layoutY="270.0" prefHeight="25.0" prefWidth="353.0" promptText="Address" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtContactNo" labelFloat="true" layoutX="337.0" layoutY="148.0" promptText="Contact No" unFocusColor="BLACK" />
+            <JFXButton layoutX="261.0" layoutY="332.0" onAction="#addDriverUpdateOnAction" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: #3867d6;" text="Add Driver" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="93.0" fitWidth="95.0" layoutX="484.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/Driver.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

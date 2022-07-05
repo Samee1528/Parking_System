@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="372.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OnParkingController">
+   <children>
+      <AnchorPane prefHeight="38.0" prefWidth="602.0" style="-fx-background-color: #747d8c;">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" prefHeight="28.0" prefWidth="140.0" text="Parking System" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="onParkingContext" layoutY="36.0" prefHeight="351.0" prefWidth="600.0" style="-fx-background-color: #95afc0;">
+         <children>
+            <TableView fx:id="tblInParking" layoutY="67.0" prefHeight="217.0" prefWidth="602.0" style="-fx-background-color: #c7ecee;">
+               <columns>
+                  <TableColumn fx:id="colVehicleNumber" prefWidth="150.0" text="Vehicle Number" />
+                  <TableColumn fx:id="colVehicleType" prefWidth="128.0" text="Vehicle Type" />
+                  <TableColumn fx:id="colDriverName" prefWidth="117.0" text="Driver Name" />
+                  <TableColumn fx:id="colLeftTime" minWidth="0.0" prefWidth="206.0" text="Left Time" />
+               </columns>
+            </TableView>
+            <ComboBox fx:id="cmbOnPark" layoutX="17.0" layoutY="21.0" prefHeight="25.0" prefWidth="110.0" visibleRowCount="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <JFXButton layoutX="6.0" layoutY="296.0" onAction="#backToHomeOnAction" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #3ae374;" text="Home">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="379.0" layoutY="21.0" onAction="#addVehicleOnAction" style="-fx-background-color: #3867d6;" text="+ Add Vehicle" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="489.0" layoutY="21.0" onAction="#addDriverOnAction" style="-fx-background-color: #3867d6;" text="+ Add Driver" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
